@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Büyü",
+    "slug": "bugyu-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAFAF7"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.bugyu.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Bitkini fotoğraflamak için kamera erişimi gerekiyor.",
+        "NSPhotoLibraryUsageDescription": "Bitki fotoğrafı seçmek için galeri erişimi gerekiyor."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAFAF7"
+      },
+      "package": "com.bugyu.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2D6A4F"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Bitki fotoğrafı seçmek için izin gerekiyor.",
+          "cameraPermission": "Bitkini fotoğraflamak için kamera izni gerekiyor."
+        }
+      ]
+    ]
+  }
+}
